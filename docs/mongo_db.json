@@ -1,0 +1,122 @@
+{
+    "collections":{
+        "courses":[
+            {
+                "id":"string",
+                "title":"string",
+                "author_id":"string",
+                "company_id":"string",
+                "created_at":"string",
+                "missions_ids":["string"]
+            }
+        ],
+        "missions":[
+            {
+                "id":"string",
+                "author_id":"string",
+                "company_id":"string",
+                "title":"string",
+                "methodology_id":"string",
+                "image_url":"string",
+                "intro":[
+                    {
+                        "id":"string",
+                        "title":"string",
+                        "content":"string",
+                        "type":"string",
+                        "links":["string"],
+                        "materials":[
+                            {
+                                "filename":"string",
+                                "file_url":"string"
+                            }
+                        ]
+                    }
+                ],
+                "materials":[
+                    {
+                        "id":"string",
+                        "filename":"string",
+                        "vector_count": 0
+                    }
+                ],
+                "levels":[
+                    {
+                        "id":"string",
+                        "title":"string",
+                        "description":"string",
+                        "case_content":"string",
+                        "type":"string"
+                    }
+                ]
+            }
+        ],
+        "lobbies":[
+            {
+                "id":"string",
+                "author_id":"string",
+                "name":"string",
+                "course_id":"string",
+                "missions":{
+                    "mission_id":{
+                        "summary":"string",
+                        "answers":[
+                            {
+                                "user_id":"string",
+                                "level_id":"string",
+                                "next_level_info": "string",
+                                "num_diamonds": 0,
+                                "completed": true,
+                                "checked": true,
+                                "history":[
+                                    {
+                                        "role": "string",
+                                        "content": "string"
+                                    }
+                                ]
+                            }
+                        ],
+                        "users":[
+                            {
+                                "user_id":"string",
+                                "summary":"string",
+                                "total_diamonds":0,
+                                "image_url": "string",
+                                "last_completed_level": 0
+                            }
+                        ]
+                    }
+                }
+            }
+        ],
+        "systems":[
+            {
+                "id":"string",
+                "level_type":"string",
+                "data_class":"string",
+                "agent_class":"string",
+                "requires_diamonds_to_complete":true,
+                "data_class_parameters":{
+                    "field_class":"string",
+                    "field_parameters":{
+                        "title":"string",
+                        "delimiter":"string"
+                    }
+                }
+            }
+        ],
+        "diamond_conversations":[
+            {
+                "id":"conversation_id",
+                "user_id":"string",
+                "diamond_id":"string",
+                "history": [
+                    {
+                        "role":"string",
+                        "content":"string"
+                    }
+                ]
+            }
+        ]
+    }
+}
