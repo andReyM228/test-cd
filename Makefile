@@ -2,7 +2,7 @@
 LATEST_COMMIT ?= $$(git rev-parse HEAD)
 VERSION ?= latest
 HOST_FOR_DOCKER_IMAGE ?= registry.digitalocean.com/registry4
-ENVIRONMENT ?= prod
+ENVIRONMENT ?= develop
 PROJECT_NAME ?= black_box/backend
 
 help: ## Show this help
