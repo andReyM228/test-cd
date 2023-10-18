@@ -1,0 +1,8 @@
+
+http://64.225.94.153:8000/docs
+http://64.225.94.153:8000/admin/docs
+http://64.225.94.153:8000/lobby/docs
+
+http://165.232.69.171:8000/admin/docs#/
+http://165.232.69.171:8000/lobby/docs#/
+http://165.232.69.171:8000/user/docs
