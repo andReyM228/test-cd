@@ -24,7 +24,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it.
       - uses: actions/checkout@v3
         with:
-          ref: ${{ env.CURRENT_BRANCH }}
+          ref: develop
 
       # Login into our docker registry.
       - uses: docker/login-action@v1
@@ -35,5 +35,4 @@ jobs:
 
       # Runs a single command using the runners shell.
       - name: Build & push docker DEVELOP images to our server
-        if: env.CURRENT_BRANCH == 'develop'
         run: make docker ENVIRONMENT=develop
