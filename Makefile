@@ -17,10 +17,9 @@ build_app: ## Build Application docker image.
 	docker build -f ./deploy/Dockerfile -t $(HOST_FOR_DOCKER_IMAGE)/$(PROJECT_NAME)/$(ENVIRONMENT):$(VERSION) .
 
 push_app: ## Push Application docker image.
-    docker push $(HOST_FOR_DOCKER_IMAGE)/$(PROJECT_NAME)/$(ENVIRONMENT):$(VERSION)
+	docker push $(HOST_FOR_DOCKER_IMAGE)/$(PROJECT_NAME)/$(ENVIRONMENT):$(VERSION)
 
 docker: ## Build and push all necessary docker images.
 	make build_app push_app
-
 
 #curl -s -H "Accept: application/vnd.docker.distribution.manifest.v2+json" -u dockerimagesregistery:qwerty123456 https://testregistry.oleksandr-bokov.com/v2/black_box/backend/prod/manifests/latest
